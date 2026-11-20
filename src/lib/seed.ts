@@ -1,7 +1,7 @@
 import { IMG } from "./images";
 import type { Category, Collection, DB, Product } from "./types";
 
-type P = Omit<Product, "id" | "sku" | "status" | "createdAt" | "bestseller" | "featured" | "newArrival"> & { flags?: string; days: number };
+type P = Omit<Product, "id" | "sku" | "status" | "createdAt" | "bestseller" | "featured" | "newArrival" | "stock"> & { flags?: string; days: number };
 
 const RING_SIZES = ["10", "12", "14", "16", "18"];
 const BANGLE_SIZES = ["2.4", "2.6", "2.8"];
